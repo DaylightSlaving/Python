@@ -1,0 +1,54 @@
+#Ascii art for the game
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+#Import random selector package
+import random
+#Create list of options
+game_images = [rock, paper, scissors]
+#Ask for user input
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors"))
+#Print user choice
+print(game_images[user_choice])
+#Generate random choice for computer
+computer_choice = random.ranint(0,2)
+#Print computer choice
+print(game_images[computer_choice])
+#Create if statement to determine the winner
+if user_choice == 0 and computer_choice == 2:
+  print("you win")
+elif computer_choice == 0 and user_choice == 2:
+ print("Computer wins")
+elif computer_choice > user_choice:
+  print("Computer wins")
+elif user_choice > computer_choice:
+  print("You win")
+elif computer_choice == user_choice:
+  print("It's a draw")
+else:
+  print("You typed an invalid numbe, you lose")
