@@ -16,6 +16,19 @@ plt.bar(
     #M for magneta
     color = "m",
     align = "center",
+    #Sets the bars transparent
+    alpha = 0.5
+)
+
+#You can plot multiple bars in the same chart
+plt.bar(
+    [1,2,3,4,5,6,7,8,9,10],
+    [3,4,2,5,2,4,2.5,4,3.5,3],
+    #Adds a label to the legend
+    label="Tom",
+    color = "g",
+    align = "center",
+    alpha = 0.5
 )
 
 #Sets the chart title
