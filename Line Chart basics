@@ -1,0 +1,34 @@
+#Tells matplotlib to display the output in Jupyter Notebook(Inline)
+%matplotlib inline 
+ #Imports matplotlib and gives it the common alias plt
+import matplotlib.pyplot as plt
+
+#Imports and sets the style to ggplot
+from matplotlib import style
+style.use("ggplot")
+
+#Uses the plot funcion of the pyplot module
+plt.plot( 
+    #X-axis
+    [1,2,3,4,5,6,7,8,9,10], 
+    #Y-axis
+    [2,4.5,1,2,3.5,2,1,2,3,2],
+    #Adds a label to the legend
+    label="Jim"
+)
+
+#You can plot multiple lines in the same chart
+plt.plot(
+    [1,2,3,4,5,6,7,8,9,10],
+    [3,4,2,5,2,4,2.5,4,3.5,3],
+    #Adds a label to the legend
+    label="Tom"
+)
+#Sets the chart title
+plt.title("Results")
+#Sets the label for the Y-axis
+plt.xlabel("Semester")
+#Sets the label for the X-axis
+plt.ylabel("Grade")
+#Shows the legend
+plt.legend()
