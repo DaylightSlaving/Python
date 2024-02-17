@@ -1,0 +1,12 @@
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+#X-axis
+plt.plot([1,2,3,4,],
+#Y-axis         
+        [1,8,27,64],
+#Blue circle marker
+        'bo')
+#Xmin, xmax, ymin and ymax
+plt.axis([0, 4.5, 0, 70])
+plt.show
