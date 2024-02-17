@@ -1,0 +1,32 @@
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+a = np.arange(1, 4.5, 0.1)
+#Yellow triangle marker
+plt.plot(a, a**2, 'y^',
+#Blue circle         
+        a, a**3, 'bo',
+#Red dashed line         
+        a, a**4, 'r--',)
+
+
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+a = np.arange(1, 4.5, 0.1)
+
+#1 row, 2 cols, chart 1
+plt.subplot(121)
+plt.plot([1,2,3,4,5],
+        [1,8,27,64,125],
+        'y^')
+
+#1 row, 2 cols, chart 2
+plt.subplot(122)
+plt.plot(a, a**2, 'y^',         
+        a, a**3, 'bo',         
+        a, a**4, 'r--',)
